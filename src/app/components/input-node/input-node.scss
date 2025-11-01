@@ -1,0 +1,40 @@
+.input-container {
+    position: relative;
+    width: 250px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.25s ease;
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+.input-container input::placeholder {
+    color: #9ca3af;
+    transition: color 0.2s ease;
+}
+
+/* Focus state */
+.input-container input:focus {
+    border-color: #3b82f6;
+    /* blue-500 */
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Optional hover effect */
+.input-container input:hover {
+    border-color: #a5b4fc;
+    /* indigo-300 */
+}
+
+/* Optional subtle floating placeholder style */
+.input-container input:focus::placeholder {
+    color: #cbd5e1;
+}
